@@ -100,6 +100,25 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  /* animation is shorthand for:
+  animation-name
+  animation-duration
+  animation-timing-function
+  animation-delay
+  animation-iteration-count
+  animation-direction
+  animation-fill-mode
+  animation-play-state */
+  animation: hover 1s infinite alternate linear;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-8px);
+  }
 }
 
 main article {
